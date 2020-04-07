@@ -30,6 +30,8 @@ import MazTabsContentItem from '../packages/components/MazTabsLayout/MazTabsCont
 import MazTransitionExpand from '../packages/components/MazTransitionExpand/index.js'
 import { version } from '../package.json'
 
+import './../packages/components/MazInput/TextareaAutogrow'
+
 const components = [
   MazBtn,
   MazBtnGroup,
@@ -63,6 +65,7 @@ const install = (Vue, opts = {}) => {
   components.forEach(component => {
     Vue.component(component.name, component)
   })
+
 }
 
 if (typeof window !== 'undefined' && window.Vue) {

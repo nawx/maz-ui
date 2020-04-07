@@ -53,7 +53,7 @@
       @change="$emit('change', $event)"
       @click="$emit('click', $event)"
     >
-    <textarea
+    <textarea-autogrow
       v-else
       :id="uniqueId"
       ref="MazInput"
