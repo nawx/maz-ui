@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1606132561",layout:"default",error:null,state:{darkTheme:a,state:{},mutations:{},getters:{},actions:{}},serverRendered:a,routePath:"\u002Fmade-with-maz-ui",config:{}}}(true));
