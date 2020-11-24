@@ -328,8 +328,10 @@ export default {
       }
       if (countryAvailable && locale) {
         this.countryCode = locale
-        buildResults(this.asYouTypeNumber, true)
+      } else {
+        this.countryCode = 'US'
       }
+      buildResults(this.asYouTypeNumber, true)
     },
 
     async focusCountrySelector () {

@@ -10,12 +10,7 @@ export const browserLocale = () => {
 }
 
 export const isCountryAvailable = async (locale) => {
-  try {
-    if (countriesIso.includes(locale)) return true
-    throw `MazPhoneNumberInput: The locale ${locale} is not available`
-  } catch (e) {
-    throw new Error(e)
-  }
+  return countriesIso.includes(locale)
 }
 
 export const getResultsFromPhoneNumber = (phoneNumber, countryCode) => {
