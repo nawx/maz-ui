@@ -9,7 +9,7 @@ export const browserLocale = () => {
   return locale
 }
 
-export const isCountryAvailable = async (locale) => {
+export const isCountryAvailable = (locale) => {
   return countriesIso.includes(locale)
 }
 
